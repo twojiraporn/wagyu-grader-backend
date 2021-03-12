@@ -14,6 +14,9 @@
         <a href="/home" class="navbar-item">
             Home
         </a>
+        <a class="navbar-item" href="{{ route('images.index') }}">
+            Check Grade of Wagyu
+        </a>
         <a class="navbar-item" href="{{ route('reports.index') }}">
             Report
         </a>

@@ -16,7 +16,7 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->string('name')->nullable(false);
-            $table->string('grade');
+            $table->enum('grade', [1, 2, 3, 4, 5]);
             $table->timestamps();
             $table->softDeletes();
         });

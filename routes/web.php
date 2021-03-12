@@ -36,5 +36,4 @@ Route::get('/home', function () {
 Route::get('/reports', [ReportsController::class, 'index'])
     -> name('reports.index');
 
-//Route::get('/reports', [ReportsController::class, 'show'])
-//    ->name('reports.show');
+Route::resource('/images', \App\Http\Controllers\ImagesController::class);
